@@ -1,5 +1,6 @@
 {
     "variables": {
-        "year": 2020
+        "year": 2020,
+        "file_type_code": "F"
     }
 }
