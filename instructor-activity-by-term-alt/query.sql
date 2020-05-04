@@ -12,10 +12,10 @@ select
 from cdm_lms.term lt
 inner join cdm_lms.course lc
     on lc.term_id = lt.id
+    and lc.course_number = 'DEA1136-20203-1V-M-001'
 left join cdm_lms.course_activity lca
     on lca.course_id = lc.id
 inner join cdm_lms.person_course lpc
     on lpc.id = lca.person_course_id
-    and lpc.course_role = 'I'
 group by term
 having term like '%{term}%'
